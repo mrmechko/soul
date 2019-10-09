@@ -2,9 +2,9 @@
 A bunch functions that would make my life easier
 """
 
-import os
+import os, re
 
-def ls(p, pattern="*", depth=0):
+def ls(p=".", pattern=".*", depth=0):
     # 1. If it is a file, return a list containing the file
     # 2. If it is a directory return all contents to depth 
     # 3. Filter results by pattern
