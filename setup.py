@@ -7,7 +7,7 @@ with open("README.MD", "r") as fh:
 if __name__ == '__main__':
     setup(
         name="thesoulshell",
-        version="0.0.2",
+        version="0.0.3",
         author="Rik Bose",
         author_email="rbose@cs.rochester.edu",
         description="add a little soul to your python",
