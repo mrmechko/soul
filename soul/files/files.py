@@ -24,6 +24,8 @@ def ls_(p=".", pattern=".*", depth=0):
     return cands
 
 def ls(p=".", pattern=".*", depth=0):
+    if os.path.isfile(p):
+        return [p]
     return [os.path.join(p, x) for x in ls_(p, pattern, depth)]
 
 def json(file_):
